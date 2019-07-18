@@ -1,0 +1,272 @@
+/* For desktop: */
+body {
+  margin:0;
+  padding:0;
+  font-family:Arial,sans-serif;
+}
+
+#nav {
+  width: 100%;
+  height: 2em;
+  background-color: #4ca7e8;
+  margin-top: -1em;
+  text-align: center;
+  position:relative;
+  z-index: 104;
+  box-shadow: 0 1px 2px rgba(23,87,117,0.5);
+  font-size: 1.5em;
+}
+
+#nav ul {
+  list-style-type:none;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#nav ul li {
+  float: left;
+  width: 100px;
+  color: white;
+  padding-right: 1em;
+}
+
+#nav li.current {
+  font-weight: bold;
+  cursor: default;
+}
+
+#nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image:url('image/me.jpg');
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}
+
+.name {
+  box-sizing:border-box;
+  background-color: #4ca7e8;
+  color:white;
+  width: 10em;
+  height: 6em;
+  text-align:center;
+  margin-left: 1em;
+  border: 1px solid white;
+  margin-top: 1em;
+}
+
+.name h1 {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+.about {
+  margin-top: 3%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 3%;
+}
+.about p {
+  font-size: 1.5em;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  line-height: 2em;
+  padding-bottom: 1em;
+}
+
+.about hr {
+  margin-left: -70%;
+  margin-right: -70%;
+}
+
+.portfolio {
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-bottom: 100px;
+}
+
+.portfolio p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  padding-left: 3%;
+  padding-right: 5%;
+}
+
+.portfolio li {
+  margin-bottom: 5em;
+}
+
+
+.resume div{
+  padding: 0;
+  margin:5%;
+}
+
+.resume p {
+  line-height: 1.5em;
+}
+
+.resume li {
+  line-height: 1.5em;
+}
+
+.line {
+  margin-top: -3em;
+}
+
+.information {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin-bottom: 0;
+}
+
+.info {
+  text-align:center;
+}
+
+.information img {
+  width: 20%;
+  height: 20%;
+  text-align:left;
+}
+
+.contact {
+  text-align: left;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+
+.contact li {
+  list-style-type:none;
+  line-height: 1.5em;
+  padding-bottom: 10px; 
+  white-space: nowrap; 
+}
+.contact img {
+  width: 10%;
+  height: 10%;
+  padding-right: 10px;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width:768px) {
+  #nav {
+    height: 1.5em;
+  }
+  
+  #nav ul {
+    margin-left: -5%;
+    margin-right: 5%;
+    margin-top: 1em;
+  }
+  
+  #nav li {
+    padding-right: 5%;
+    font-size: 0.7em;
+  }
+  
+  .name {
+    width: 6em;
+  height: 4em;
+  }
+  
+  .name h1 {
+    font-size: 1em;
+  }
+  
+  .about {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
+  
+  .about p {
+    font-size: 1.3em;
+  text-align: justify;
+  letter-spacing: 0.01em;
+  line-height: 1.5em;
+  padding-bottom: 0.5em;
+  }
+  
+  .portfolio {
+  margin-top: 3em;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 3em;
+  font-size: 0.8em;
+  }
+
+  .portfolio h2 {
+    margin-bottom: 0.5em;
+  }
+  
+  .portfolio p {
+    line-height: 2em;
+    text-align: justify;
+    letter-spacing: 0.005em;  
+    padding-left: 3%;
+    padding-right: 6%;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .portfolio li {
+    margin-bottom: 3em;
+  }
+  
+  .information div {
+    padding: 0;
+    margin: 0;
+  }
+  .info {
+    text-align: left;
+  }
+  
+  .info h1 {
+    font-size: 1.7em;
+  }
+  
+  .information img {
+    width: 10em;
+    height: 10em;
+    text-align:left;
+    padding-top: 3em;
+  }
+  
+  .resume {
+    margin-bottom: 3em;
+  }  
+  
+  .line {
+    margin-top: -2em;
+  }
+  
+  .contact {
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .contact img {
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+  }
+}
